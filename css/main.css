@@ -32,6 +32,11 @@
 .m4 h1 {text-align: center; margin-top: 127px; color: white; font-weight: 400;}
 .clickbox {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
 
+.clickbox:hover:after {content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color:#eee; opacity: 0.5;}
+
+
+
+
 /* .m1:hover, .m2:hover, .m3:hover, .m4:hover {opacity: 0.6;} */
 
 
