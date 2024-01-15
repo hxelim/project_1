@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLNTS.com</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var video = $('#plntsVideo');
+            var btn = $('.img-button');
+
+            btn.click(function () {
+                video.get(0).play();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <header>
+        <div id="freeship_bg">
+            <div class="freeship">
+                <p class="barlow">FREE SHIPPING ON ORDER OVER $50</p>
+                <ul id="top_menu">
+                    <li><a href="#">English
+                        </a>
+                    </li>
+                    <li><a href="#">USD
+                        </a>
+                    </li>
+                    <li><a href="#">Your Account</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="head">
+            <img src="img/common/Logo.png" alt="logo1">
+            <nav id="menu_bar">
+                <ul>
+                    <li><a href="#">Houseplants</a></li>
+                    <li><a href="#">Pots</a></li>
+                    <li><a href="#">Care</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Gifts</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="icon_head">
+                    <a href="#"><img src="img/common/icon_search_fix.png" alt="icon_search"></a>
+                    <a href="#"><img src="img/common/icon_bag_fix.png" alt="icon_bag"></a>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <!-- 슬라이더 -->
+    <div id="slider">
+        <div id="slider_text">
+            <h1>PLANT FOR INTERIOR</h1>
+            <p>Bring freshness to your arcitecture</p>
+            <button onclick="location.href='#'">SHOP NOW</button>
+        </div>
+    </div>
+
+    <!-- 섹션 -->
+    <section>
+        <!-- 상자메뉴 -->
+        <div id="menubox_bg">
+            <div class="menu m1">
+                <a href="#">
+                    <h1>Houseplants</h1>
+                    <p>PLNTS.com is your one-stop shop for all plant related
+                        goodness. It's a place to learn how to become the best
+                        possible plant parent and connect with other plant lovers
+                        throughout Europe</p>
+                        <div class="clickbox"></div>
+                    </a>
+                    <button onclick="location.href='#'">SHOP NOW</button>
+            </div>
+            <div class="menu m2">
+                <a href="#">
+                    <h1>Pots </h1>
+                    <div class="clickbox"></div>
+                </a>
+            </div>
+            <div class="menu m3"><a href="#">
+                    <h1>Care</h1>
+                    <div class="clickbox"></div>
+                </a> </div>
+            <div class="menu m4"><a href="#">
+                    <h1>Accessories</h1>
+                    <div class="clickbox"></div>
+                </a></div>
+        </div>
+
+        <!-- New product -->
+        <div id="new_bg">
+            <div class="new_all">
+                <h1 class="title">NEW <span> PRODUCT</span></h1>
+                <div class="new box1">
+                    <img src="img/main/new1.jpg" alt="">
+                    <p>Small Terrarous Plant <br> for Desk</p>
+                    <span>$139</span>
+                </div>
+                <div class="new box2">
+                    <img src="img/main/new2.jpg" alt="">
+                    <p>Small Terrarous Plant <br> for Desk</p>
+                    <span>$139</span>
+                </div>
+                <div class="new box3">
+                    <img src="img/main/new3.jpg" alt="">
+                    <p>Small Terrarous Plant <br> for Desk</p>
+                    <span>$139</span>
+                </div>
+                <div class="new box4 mr1">
+                    <img src="img/main/new4.jpg" alt="">
+                    <p>Small Terrarous Plant <br> for Desk</p>
+                    <span>$139</span>
+                </div>
+                <a href="#"><img src="img/main/arrow_left.png" alt="arrow_left"></a>
+                <a href="#"><img src="img/main/arrow_right.png" alt="arrow_right"></a>
+            </div>
+        </div>
+
+        <!-- video 섹션 -->
+        <div>
+            <div class="leftbox">
+                <video loop muted poster="img/main/video_fix.png" id="plntsVideo">
+                    <source src="img/main/PLNTS_The_Exhibition.mp4">
+                </video>
+                <div class="video_text">
+                    <input type="button" class="img-button" value="&nbsp;">
+                    <h1>DISCOVER OUR GARDEN AREA</h1>
+                </div>
+            </div>
+            <div class="rightbox">
+                <div class="sustainability">
+                    <h1><span>SUSTAINABILITY</span></h1>
+                    <p>
+                        At PLNTS we are surrounded by plants in our nursery, in our office and in our own homes.
+                        It's safe to say that we love green and it's our passion and mission to make the world a
+                        greener place! Plants literally make the world greener by their beautiful color but they also
+                        possess a superpower to produce oxygen and to absorb CO2. This is great for our planet and also
+                        for the quality of air of our own homes. We are super proud that our webshop is filled with
+                        stars
+                        that deliver a great contribution to our planet, just by being here.
+                    </p>
+                    <button onclick="location.href='#'">READ MORE</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top stars -->
+        <div id="top">
+            <h1 class="title">OUR <span>TOP STARS</span></h1>
+            <div class="imgbox_all">
+                <div class="imgbox box1 mr1">
+                    <img src="img/main/top1.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box2">
+                    <img src="img/main/top2.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box3">
+                    <img src="img/main/top3.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box4">
+                    <img src="img/main/top4.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box5 mr2">
+                    <img src="img/main/top5.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box6 mr1">
+                    <img src="img/main/top6.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box7">
+                    <img src="img/main/top7.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box8">
+                    <img src="img/main/top8.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box9">
+                    <img src="img/main/top9_fix.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+                <div class="imgbox box10 mr2">
+                    <img src="img/main/top10.jpg" alt="plants">
+                    <div class="imgbox_cover"></div>
+                    <p class="imgbox_cover_text">Small Terrarous Plant <br> for Desk<br>
+                        <br> <br>
+                        <span class="price">$139</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About us -->
+        <div id="aboutus_bg">
+            <div class="aboutus">
+                <h1 class="title">ABOUT <span>US</span></h1>
+                <div class="abu box1">
+                    <img src="img/main/aboutus_1.jpg" alt="">
+                    <h3>Our story</h3>
+                    <p>Our family has been in the plant nursery business for over 150 years,
+                        everything started with our <br> great-grandfather.</p>
+                    <input type="button" value="READ MORE" onclick="location.href='#'">
+                </div>
+                <div class="abu box2 mr1">
+                    <img src="img/main/aboutus_2.jpg" alt="">
+                    <h3>Our community</h3>
+                    <p>Without our community, we would not have come as far as we are today. For five years, we have
+                        been learning,
+                        sharing and inspiring each other with everything related to our love for plants.</p>
+                    <input type="button" value="READ MORE" onclick="location.href='#'">
+                </div>
+                <div class="abu box3">
+                    <img src="img/main/aboutus_3.jpg" alt="">
+                    <h3>Plant of the month: Norfolk Island Pine</h3>
+                    <p>The most cheerful period of the year has come, which means that most of us will have decorated
+                        our houses with the Christmas spirit already. </p>
+                    <input type="button" value="READ MORE" onclick="location.href='#'">
+                </div>
+            </div>
+        </div>
+
+        <!-- Join us -->
+        <div id="join_bg">
+            <img src="img/main/joinus_fix.png" alt="">
+            <div class="join">
+                <h1 class="title">JOIN US</h1>
+                <p>What's the word on the street? <br>
+                    Be part of our community by subscribing to our newsletters!</p>
+                <form>
+                    <input type="text" placeholder="    Your email address" name="email"><br>
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contacts -->
+        <div id="contacts_bg">
+            <div class="contacts">
+                <h1 class="title">CONTACTS</h1>
+                <p> Adress: rua de Francesco Bonso, 29 <br>
+                    Phone: +31 85 004 1952</p>
+                <div class="icon_sns">
+                    <a href="#"><img src="img/main/icon_sns_insta.png" alt="instagram"></a>
+                    <a href="#"><img src="img/main/icon_sns_face.png" alt="facebook"></a>
+                    <a href="#"><img src="img/main/icon_sns_twit.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- 푸터 -->
+    <footer id="footer_bg">
+        <img src="img/common/footer_bg_fix.png" alt="footer_bg">
+        <div class="footer">
+            <img src="img/common/logo_white.png" alt="">
+            <div class="footermenu">
+                <div class="foot mn1">
+                    <h2>Shop</h2>
+                    <br><br>
+                    <p><a href="#">
+                            All houseplants</a>
+                        <br>
+                        <a href="#">All Baby houseplants</a>
+                    </p>
+                    <br><br><br>
+                    <h2>My account</h2>
+                    <br><br>
+                    <p><a href="#">Log in</a></p><br>
+                </div>
+                <div class="foot mn2">
+                    <h2>Customer service</h2>
+                    <br><br>
+                    <p><a href="#">Frequetly asked questions</a> <br>
+                        <a href="#">Contact</a><br>
+                        <a href="#">Payments</a><br>
+                        <a href="#">Transport and delivery</a><br>
+                        <a href="#">Guarantee</a><br>
+                        <a href="#">Return policy</a>
+                    </p>
+                </div>
+                <div class="foot mn3">
+                    <h2>About PLNTS</h2>
+                    <br><br>
+                    <p><a href="#">Giftcard</a><br>
+                        <a href="#">About us</a><br>
+                        <a href="#">sustainability</a><br>
+                        <a href="#">Meet the creators</a><br>
+                        <a href="#">Collaborations</a><br>
+                        <a href="#">Job opportunities</a>
+                    </p>
+                </div>
+            </div>
+            <p class="copyright">copyrightⓒ 2008 All rights reserved by PLNT.COM</p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

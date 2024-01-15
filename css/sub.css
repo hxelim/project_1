@@ -1,0 +1,140 @@
+@charset "UTF-8";
+        h3 {
+            font-size: 18pt;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+    
+        p, input[type="submit"] {
+            font-size: 14pt; font-family: 'Roboto Condensed', sans-serif;
+        }
+
+/* 섹션 */
+/* .image { background-color: lightgray;} */
+h1 {font-size: 22pt; font-family: 'Roboto Condensed', sans-serif; letter-spacing: 1px; color: #1D4739;}
+
+    /* 상품이미지 */
+section {display: flex; flex-direction: column; align-items: center; width: 1186px; margin: 0 auto;}
+#product_intro {width: 1186px; height: 640px;  display: flex; justify-content: flex-end; margin-top: 20px;}
+.orderbox {width: 1091px; height: 640px;   display: flex; justify-content: space-between;}
+.photobox {width: 621px; height: 640px;  
+    display: flex; justify-content: space-between; align-items: center; }
+.photoBig {width: 482px; height: 640px; overflow: hidden;}
+.photoBig img {width: 100%; height: 100%; object-fit: contain;}
+.photos {width: 66px; height: 88px; margin: 10px 0; overflow: hidden; }
+.photos img {width: 100%; height: 100%;  object-fit: cover;}
+.photoSmall {display: flex; flex-flow: column wrap;}
+
+.photoBig img:hover {cursor: zoom-in; transform: scale(1.3); }
+
+
+    /* 주문창 */
+.order {width: 388px; height: 640px; display: flex; flex-flow: column; justify-content: space-between; 
+    line-height: 30px;
+}
+.textstyle {text-decoration: underline; font-weight: bold; font-style: italic;}
+.potstyle {margin-top: 20px;}
+.potstyle img {opacity: 0.5; 
+    /* margin: 0px 13px 0 13px;   */
+ }
+
+
+
+
+.potcolor {display: flex; margin-left: 10px;}
+.potcolorbox {width: 40px; height: 40px; border-radius: 10px; margin: 10px 5px 0 5px;}
+.potimagebox {display: flex; align-items: flex-end; justify-content: space-between; margin-left: 10px;}
+.pot {width: 55px; height: 55px; display: flex; align-items: center; justify-content: center;}
+.plantonly {opacity: 0.2;}
+
+    .potstyle img:hover {opacity: 1; }
+    .potimagebox .active  {opacity: 1; background-color: rgba(199, 177, 153,0.1); 
+        border: 5px solid rgba(199, 177, 153,0.3); box-shadow: 0 0 3px 1px rgba(67, 59, 51,0.3) ; border-radius: 10px;}
+    .potimagebox .active img {opacity: 1;}
+
+
+.quantity {border: 1px solid rgba(199, 177, 153, 0.5) ; width: 135px; height: 50px; display: flex; align-items: center; justify-content: space-evenly;}
+.quantity input[type="number"] {width: 50px ; font-size: 14pt; background-color: transparent; border: none; text-align: center; }
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+
+input[value="ADD TO CART"] {width: 100%; height: 50px; border-style: none; ; letter-spacing: 3px; 
+    background-color: #C7B199; color: white;  }
+.reviewbox {width: 100%; height: 120px; background-color: rgba(199, 177, 153,0.4); line-height: 20px;
+    display: flex; flex-flow: wrap; justify-content: center; align-content: center; position: relative;}
+.reviewbox img[alt="quoteL"] {margin: 10px; position: absolute; top: 5%; left: 2%; transform: translate(-50%,-50%);}
+.reviewbox img[alt="quoteR"] {margin: 10px; position: absolute; top: 35%; right: 0%; transform: translate(-50%,-50%);}
+.review {width: 80%; height: 80%; display: flex; flex-wrap: wrap; align-items: center;}
+.arrow3 {position: absolute; bottom: 0%; right: 0%; transform: translate(-50%,-50%); width: 40px; display: flex; justify-content: space-between;}
+
+
+    /* navigation */
+#middlenav {height: 38px;  margin: 60px 0 40px 0; display: flex; justify-content: space-between; }
+#middlenav li {font-weight: 600; font-size: 22pt; color: rgba(0, 0, 0, 0.5); }
+
+#middlenav li:hover {color: #000;}
+#middlenav .active {color: #000; border-bottom: 8px solid #C7B199; padding-bottom: 10px;}
+
+
+.navbox {display: flex; flex-flow: column; align-items: center;}
+
+        /* description */
+.description {width: 100%; height: 720px; }
+.descriptionbox {display: flex; justify-content: space-between;}
+.textbox {width: 30%; height: 660px; background-color: rgb(199, 177, 153,0.2); border-radius: 30px; display: flex; flex-flow: column wrap; justify-content: space-evenly; align-items: center; text-align: justify;}
+.textbox p, .potsize {width: 80%; }
+.textbox .potsize_text {line-height: 30px; display: flex;}
+.textbox span {text-decoration:underline; font-weight: bold;}
+
+.care {width: 65%; height: 660px; display: flex; flex-wrap: wrap; justify-content: space-between; align-content: space-evenly; }
+.care .box {width: 32%; height: 209px; text-align: center; 
+}
+.boxsize {width: 72px; height: 72px; display: flex; justify-content: center; align-items: center; margin-bottom: 10px; margin: 0 auto;}
+.box > p {font-size: 13pt; text-align: justify;}
+
+.fontsmall,.right_align {font-size: 11pt;}
+.right_align {text-align: right; }
+
+        /* delivery */
+.delivery {width: 1190px; height: 300px; font-size: 20pt; text-align: justify;}
+
+        /* disclaimer */
+.disclaimer {width: 1190px; height: 300px; font-size: 20pt; text-align: justify;}
+
+        /* product reviews */
+.productReviews {width: 1190px; height: 385px; 
+    position: relative; 
+} 
+.productReviews form { display: flex; flex-wrap: wrap; justify-content: space-between;}
+.productReviews div { margin-bottom: 10px; font-size: 30px;}
+.productReviews input, textarea {font-size: 14pt; font-family: 'Roboto Condensed', sans-serif; background-color: rgba(199, 177, 153,0.2); border: none;} 
+.rating p, .name input, .email input, .reviewtitle input, .reviewtext  input {width: 100%; height: 35px;}
+.rating {width: 18%; height: 40px; }
+
+.rating p {font-size: 30px; line-height: 40px; margin-left: 10px; color: rgba(199, 177, 153,0.5);}
+.name {width: 30%;}
+.email {width: 50%; }
+.reviewtitle {width: 100%;}
+
+.reviewtext {width: 100%; height: 135px; }
+textarea {width: 100%; height: 100%; resize: none; line-height: 22pt;} 
+
+.productReviews input[type="submit"] {position: absolute; bottom: 0; right: 0; width: 388px; height: 50px; background-color: #C7B199; color: white; border: none; letter-spacing: 3px;}
+
+
+    /* alsolike */
+.alsolike {width: 100%; height: 443px; text-align: center; 
+    display: flex; flex-flow: column; justify-content: space-between;; margin-top: 60px; position: relative;}
+.alsolike h2 {font-size: 22pt;}
+.imgboxslide {display: flex; justify-content: space-between;}
+/* .imgboxslide.active {background-color: gold;} */
+.likeimg {width: 261px; height: 300px;}
+.likeimg img {width: 100%; height: 100%; object-fit: cover;}
+
+.imgbox > h3 {margin-top: 20px;}
+.imgbox > p {margin-top: 10px;}
+.like_textbox img[alt=arrow_R] {position: absolute; top: 50%; left: -5%; transform: translate(-50%,-50%);}
+.like_textbox img[alt=arrow_L] {position: absolute; top: 50%; right:-5%; transform: translate(-50%,-50%)}
+
+
+
+/* blank */
+.blank {width: 100%; height: 200px;}

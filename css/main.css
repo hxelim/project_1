@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+
+/* 슬라이더 */
+#slider {width: 100%; height: 790px; 
+    background-image: url(../img/main/slider_main_fix.png); 
+    position: relative; background-repeat: no-repeat; background-size: cover;}
+#slider_text {width: 825px; height: 220px; margin: 0 auto; position: absolute; 
+    top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; 
+    text-shadow: 2px 2px 8px rgba(153, 153, 153,0.3);}
+
+#slider_text {text-align: center; color: white;}
+#slider_text > h1 {font-size: 67pt; letter-spacing: 10px; font-weight: 400;}
+#slider_text > p {font-size: 20pt; letter-spacing: 1px;}
+
+
+
+
+/* 섹션 */
+    /* 상자메뉴 */
+#menubox_bg {width: 1186px; height: 825px; margin: 0 auto; padding: 104px 0; position: relative;}
+.menu h1 {font-size: 35pt; font-weight: 500; margin: 10px 0 20px 20px;}
+
+.m1 {width: 578px; height: 620px; background-image: url(../img/main/menubox_houseplants_fix.jpg.png); 
+    background-size: cover; float: left; margin-right: 30px; position: relative;}
+.m1 p {font-size: 14pt; width: 420px; color: white; margin: 0 0 0 20px;}
+.m1 button {margin-left: 20px;}
+.m2 {width: 274px; height: 295px; background-image: url(../img/main/menubox_pots_fix.png); background-size: cover; 
+    float: left; margin: 0 30px 30px 0; position: relative;}
+.m3 {width: 274px; height: 295px; background-image: url(../img/main/menubox_care_fix.png); background-size: cover; float: left; position: relative;}
+.m4 {width: 578px; height: 295px; background-image: url(../img/main/menubox_acc_fix.png); background-size: cover; float: left; position: relative;}
+.m4 h1 {text-align: center; margin-top: 127px; color: white; font-weight: 400;}
+.clickbox {position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/* .m1:hover, .m2:hover, .m3:hover, .m4:hover {opacity: 0.6;} */
+
+
+    /* New product */
+#new_bg {width: 100%; height: 680px; background-color: #f5f5f5; position: relative;}
+.new_all {width: 1186px; height: 480px; position: absolute; 
+          top: 45%; left: 50%; transform: translate(-50%,-50%);}
+.new {width: 274px; height: 380px; background-color: white; float: left; margin: 50px 30px 0 0;}
+.new img {width: 90%; height: 250px; transform: translate(14px);}
+.new p {font-size: 18pt; text-align: center;}
+.new span {font-size: 22pt; text-align: center; display: block; margin-top: 18px;}
+span {color: #c7b199;}
+.new.mr1 {margin-right: 0;}
+
+img[alt="arrow_left"] {position: absolute; top: 60%; left: -5%; }
+img[alt="arrow_right"]  {position: absolute; top: 60%; right: -5%; }
+
+    /* video 섹션 */
+.leftbox {width: 50%; height: 520px; background-color: burlywood; float: left; overflow: hidden; position: relative;}
+.leftbox>video {width: 100%; height: 100%; z-index: 1; object-fit: cover;}
+.video_text {width: 406px; height: 218px; 
+    position: absolute; top:260px; right:500px; transform: translate(50%,-50%); }
+input.img-button {
+    background: url(../img/main/logo_play.png) no-repeat;
+    border: none;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%; left: 50%; transform: translate(-50%,-90%);
+    margin-bottom: 55px;
+  }
+.video_text h1 {font-size: 30pt; font-weight: 400; width: 406px; color: white; 
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%,130%); text-align: center;}
+
+.img-button {cursor: pointer;}
+
+.rightbox {width: 50%; height: 520px; background-image: url(../img/main/sustainability_fix.png);
+    background-repeat: no-repeat; background-size: cover; float: right; position: relative; overflow: hidden;}
+.sustainability {width: 57.3%; height:350px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.rightbox h1 {font-size: 28pt; font-weight: 400; letter-spacing: 5px;}
+.rightbox p {margin: 60px 0 40px 0; font-size: 13pt;}
+
+
+    /* Top stars */
+#top {width: 1186px; height: 930px; margin: 0 auto; clear: both; 
+    position: relative;}
+#top h1 {position: absolute; top: 130px; left: 50%; transform: translate(-50%,-50%);}
+.imgbox_all {position: absolute; top: 25%;}
+    
+.imgbox {width: 220px; height: 300px;  float: left; overflow: hidden; position: relative; }
+.imgbox_all > div:not(.mr1, .mr2) {margin: 0px 11px;}
+.imgbox.mr1 {margin: 0px 10px 11px 0;}
+.imgbox.mr2 {margin: 0px 0 11px 10px;}
+
+img[alt="plants"] { width: 220px; height: 300px; object-fit: contain; position: relative;
+    transform: scale(1.4); transform-origin: center;}
+
+        /* image hover */
+.imgbox:hover .imgbox_cover {position: absolute; top: 0; left: 0; width: 100%; 
+    height: 100%; background-color: #eee; opacity: 0.8; border-radius: 30px;}
+.imgbox:hover .imgbox_cover_text {position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%); 
+    text-align: center; font-size: 16pt;}
+span.price {font-size: 20pt; font-weight: 500; color: #1d4739; border-radius:20px; padding: 5px 10px;}
+.imgbox:hover img[alt="plants"] {transform: scale(1.2);}
+
+
+
+    /* About us */
+#aboutus_bg {width: 100%; height: 700px; background-color: #f5f5f5; position: relative;}
+.aboutus {width: 1186px; height: 535px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.abu {width: 376px; height: 440px; float: left;  margin-top: 94px;}
+.abu.mr1 { margin: 94px 29px 0 29px;}
+.abu img {width:376px; height: 250px; object-fit: cover;}
+
+.aboutus h1 {position: absolute; top: 4%; left: 50%; transform: translate(-50%,-50%); }
+
+.abu h3 {font-family: 'Roboto Condensed', sans-serif; margin: 20px 0; font-size: 16pt; font-weight: 600;}
+.abu p {font-size: 13pt; line-height: 20px; }
+.abu input[type="button"] {position: absolute; bottom: 3px; font-size: 13pt; border-style: none; 
+    color:#c7b199; background-color: transparent; font-weight: 500; letter-spacing: 1px;}
+
+
+
+
+    /* Join us */
+#join_bg {width: 100%; height: 700px; background-color: #a7bfb1; position: relative;}
+#join_bg img {position: absolute; left: 0; bottom: 0; transform: translate(0,130px); z-index: 1;}
+.join {width: 380px; height: 265px;  
+    position: absolute; top: 50%; left: 50%; transform: translate(0%,-50%); padding-top: 60px; z-index: 2;}
+.join h1 {position: absolute; top: 6%; left: 50%; transform: translate(-50%,-50%); font-size: 30pt; }
+input[name="email"] {width: 100%; height: 50px; font-size: 13pt; border: 2px solid #c7b199; margin-top: 10%;}
+
+.join button {position: absolute; bottom: 0; left: 50%; transform: translate(-50%,0); width: 150px; height: 30px;}
+
+    /* Contacts */
+#contacts_bg {width: 100%; height: 525px; background-color:#f7f7f7; position: relative;}
+.contacts {width: 270px; height: 185px; position: absolute; 
+    top: 50%; left: 50%; transform: translate(-50%,-50%); text-align: center;}
+.contacts h1 {font-size: 30pt; line-height: 25px;}
+.contacts p {line-height: 30px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 270px;}
+.icon_sns {position: absolute; bottom: 0; left: 50%; transform: translate(-50%);}
+.icon_sns img[alt="facebook"] {margin: 0 5px;}
+
